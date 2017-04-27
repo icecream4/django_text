@@ -1,0 +1,6 @@
+from django.conf.urls import url
+from text.views import text_list
+
+urlpatterns = [
+    url(r'^text/list/$', movies_list, name='movie_list'),
+]

@@ -1,0 +1,8 @@
+from text.models import Text
+import datetime
+
+
+def create():
+	str = 'sdgjsdg fdgd fh dfh'
+	a = Text(title='Имя', text_type=1, created_at=datetime.datetime.now(), contents=str)
+	a.save()

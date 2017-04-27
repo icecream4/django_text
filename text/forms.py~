@@ -1,0 +1,8 @@
+from text.models import Text, UserProfile, Comment, Like
+from django import forms
+
+class UserRegistForm(forms.Form):
+    # username = froms.ChaerField(label='Имя', max_lenght=100)
+    class Meta:
+        model = UserProfile
+        fields = ('username', 'email')
